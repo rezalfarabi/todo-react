@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('build app') {
             steps {
-                sh 'npm install'
+                sh 'apt install update'
+                sh 'apt install npm'
             }
         }
         stage ('test app') {
