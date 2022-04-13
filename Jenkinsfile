@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build app') {
             steps {
-                sh 'sudo npm install'
+                sh 'npm install'
             }
         }
         stage ('test app') {
